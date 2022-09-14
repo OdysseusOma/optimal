@@ -5,8 +5,8 @@ import Earth from './Earth'
 
 const ThreeD = () => {
   return (
-    <div className='h-screen'>
-    <Canvas camera={{ position: [0, 0, 1], fov: 45 }}>
+    <div className='h-screen bg-[#00000e]'>
+    <Canvas camera={{ position: [0, 0, -4], fov: 45 }}>
         <Suspense fallback={null}>
             <Earth />
         </Suspense>
