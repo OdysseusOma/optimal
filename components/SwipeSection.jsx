@@ -50,14 +50,14 @@ const data = [
 const SwiperSection = () => {
   const [swiperno, setSwiperno] = useState(3)
 
-  useEffect(() => {
-    let mediaQuery = window.matchMedia("(min-width: 768px)");
-    mediaQuery.addEventListener(setSwiperno);
-    // this is the cleanup function to remove the listener
-    return () => mediaQuery.removeEventListener(setSwiperno);
-  }, [])
+  // useEffect(() => {
+  //   let mediaQuery = window.matchMedia("(min-width: 768px)");
+  //   mediaQuery.addEventListener(setSwiperno);
+  //   // this is the cleanup function to remove the listener
+  //   return () => mediaQuery.removeEventListener(setSwiperno);
+  // }, [])
   return (
-    <div>
+    <div className="hidden">
         <Swiper
             slidesPerView={swiperno}
             spaceBetween={10}
