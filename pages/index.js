@@ -8,6 +8,10 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import ThreeD from '../components/ThreeD'
+import Services from '../components/Services'
+import About from '../components/About'
+import Testimony from '../components/Testimony'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
@@ -16,6 +20,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ThreeD />
+      <Services />
+      <About />
+      <Testimony />
+      <Contact />
       <Footer />
     </div>
   )
