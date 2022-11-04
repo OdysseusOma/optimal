@@ -16,7 +16,7 @@ import Contact from '../components/Contact'
 
 export default function Home() {
   return (
-    <div className="relative mx-auto text-white w-full">
+    <div className="relative mx-auto text-white w-full bg-black -z-10">
       <Navbar />
       <Hero />
       <ThreeD />

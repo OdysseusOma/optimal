@@ -4,10 +4,12 @@ import SwipeSection from './SwipeSection'
 
 const Testimony = () => {
   return (
-    <div className='testimonial-block'>
-      <div className='testimonial-section'>
-        <h1>Testimonials</h1>
-        <SwipeSection />
+    <div id='testimonials' className=''>
+      <div className='testimonial-block'>
+        <div className='testimonial-section'>
+          <h1 className='text-5xl py-10 font-bold'><span className='text-blue-900'>T</span>estimonials</h1>
+          <SwipeSection />
+        </div>
       </div>
     </div>
   )

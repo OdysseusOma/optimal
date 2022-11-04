@@ -82,7 +82,27 @@ a {
 
 
 
+.svgwave-cont {
+  position: relative;
+}
 
+.svgwave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.svgblob-cont {
+  position: relative;
+}
+
+.svgblob {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 50%;
+  z-index: -1;
+}
 
 
 
@@ -247,7 +267,7 @@ a {
   bottom: -10px;
   width: 25px;
   height: 4px;
-  background: white;
+  background: #1e3a8a;
 }
 
 .app-contact {

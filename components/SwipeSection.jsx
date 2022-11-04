@@ -48,19 +48,41 @@ const data = [
 ]
 
 const SwiperSection = () => {
-  const [swiperno, setSwiperno] = useState(3)
+  // const [swiperno, setSwiperno] = useState(3)
 
   // useEffect(() => {
-  //   let mediaQuery = window.matchMedia("(min-width: 768px)");
-  //   mediaQuery.addEventListener(setSwiperno);
-  //   // this is the cleanup function to remove the listener
-  //   return () => mediaQuery.removeEventListener(setSwiperno);
-  // }, [])
+  //    let width = window.innerWidth
+    
+    
+  //   if (width < 700) {
+  //     setSwiperno(1)
+  //     console.log(swiperno)
+  //   }
+  //   else {
+  //     setSwiperno(3)
+  //     console.log(swiperno)
+  //   }
+  // },[])
+
+
+
+
   return (
-    <div className="hidden">
+    <div className="w-full mx-auto flex items-center justify-center">
         <Swiper
-            slidesPerView={swiperno}
-            spaceBetween={10}
+          breakpoints={{
+              200: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              1000: {
+                slidesPerView: 3,
+              },
+            }}
+            slidesPerView= {3}
+            spaceBetween={20}
             loop={true}
             pagination={{
               clickable: true,

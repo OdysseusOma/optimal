@@ -5,8 +5,12 @@ const Hero = () => {
     <main 
     style={{
     backgroundImage: `url('/hero.png')`,
+    // Uncomment height and width to get background image 
+    // Leaving them commented out will make 3D earth the hero page
     height: '90vh',
     width: '100%',
+    
+    // width: '100vw',
     backgroundRepeat: 'no-repeat'
     }}
     >
